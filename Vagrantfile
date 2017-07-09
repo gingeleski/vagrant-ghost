@@ -9,4 +9,6 @@ Vagrant.configure(2) do |config|
 
   config.vm.synced_folder "./ghost", "/var/www/ghost"
 
+  config.vm.provision "shell", path: "setup.sh"
+
 end
