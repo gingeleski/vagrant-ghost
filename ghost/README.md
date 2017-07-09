@@ -1,0 +1,1 @@
+(Placeholder, all the Ghost installation stuff will be here)
