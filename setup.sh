@@ -13,6 +13,7 @@ sudo unzip -d /var/www/ghost ghost-latest.zip
 
 # Install NodeJS, npm
 sudo apt-get --assume-yes install nodejs
+sudo ln -s `which nodejs` /usr/bin/node
 sudo apt-get --assume-yes install npm
 
 # Install Ghost modules via npm
