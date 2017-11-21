@@ -1,14 +1,10 @@
 # vagrant-ghost
 
-This is a development box for Ghost.
+This is an Ubuntu Vagrant box for Ghost theme development.
 
-It's Ubuntu 16.04, it installs the latest version of Ghost, and when it does you can access everything inside via `./ghost`.
+Existing solutions were prebuilt with old versions of Ghost and/or dependencies :sob:
 
-I built it with the intention of developing themes, because existing solutions were prebuilt with old versions of Ghost or its prerequisites.
-
-This one grabs the latest of everything when you `vagrant up`.
-
-Look how easy the setup is...
+This one grabs the latest of everything when you `vagrant up` :rainbow:
 
 ## Setup
 
@@ -20,3 +16,5 @@ vagrant ssh
 cd /var/www/ghost
 npm start
 ```
+
+The contents of your Ghost installation will be accessible in the `ghost` directory.
