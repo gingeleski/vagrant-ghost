@@ -3,7 +3,7 @@
 
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "bento/ubuntu-16.04"
+  config.vm.box = "bento/ubuntu-19.10"
 
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
