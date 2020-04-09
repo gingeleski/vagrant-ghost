@@ -13,8 +13,6 @@ git clone https://github.com/gingeleski/vagrant-ghost.git
 cd vagrant-ghost
 vagrant up
 vagrant ssh
-cd /var/www/ghost
-npm start
 ```
 
 The contents of your Ghost installation will be accessible in the `ghost` directory.
