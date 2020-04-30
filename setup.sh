@@ -12,6 +12,9 @@ sudo apt-get install -y nodejs
 npm install ghost-cli@latest -g
 
 # For the actual Ghost install step we cannot be root - permit 'vagrant' user
-sudo chown vagrant:vagrant /root
-sudo chown vagrant:vagrant /ghost
 su -c "ghost install local" vagrant
+
+# Now make sure Ghost will be served to loopback and have a host-routable address
+su -c "ghost config server.host 0.0.0.0" vagrant
+su -c "ghost config url \"http://$(ip -4 addr show eth1 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'):2368/\"" vagrant
+su -c "ghost restart" vagrant
